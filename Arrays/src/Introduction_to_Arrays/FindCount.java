@@ -1,7 +1,6 @@
 package Introduction_to_Arrays;
 //Given an array of size N . Find the count of elements which has atleast one greater element.
 
-import static java.lang.Math.max;
 
 public class FindCount {
     public static void main(String[] args) {
@@ -11,7 +10,7 @@ public class FindCount {
 
     public static  int findCount(int[] arr){
 
-       // here the time complexity is N
+       // here the time complexity is 2N
         int mx=arr[0];
         for (int i = 0; i < arr.length ; i++) {
             if (arr[i] > mx) {

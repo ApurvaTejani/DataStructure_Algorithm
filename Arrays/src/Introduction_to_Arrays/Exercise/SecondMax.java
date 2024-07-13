@@ -3,7 +3,7 @@ package Introduction_to_Arrays.Exercise;
 public class SecondMax {
     public static void main(String[] args) {
 
-        int A[]={20,12,15,19,13,5,13,12,18};
+        int A[]={4,4,4};
         System.out.println(secondMax(A));
     }
     public static int secondMax(int A[]){
@@ -17,16 +17,21 @@ public class SecondMax {
                 max=A[i];
             }
         }
+        int count=0;
         int secondMax=0;
         for(int i=0;i<A.length;i++){
-            if(A[i]==max)
+            if(A[i]==max) {
+                count++;
                 continue;
+            }
             else{
                 if(secondMax<A[i]){
                     secondMax=A[i];
                 }
             }
         }
+        if(count==A.length)
+            return -1;
         return secondMax;
     }
 }

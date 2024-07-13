@@ -10,7 +10,7 @@ public class RotateArray {
         System.out.println(Arrays.toString(rotateN(arr,6)));
         System.out.println(Arrays.toString(rotate(arr,6)));
     }
-    // Time Complex-> O(N) Space -> O(1)
+    // Time Complex-> O(N) // Space -> O(1)
     public static int[] rotate(int arr[], int k){
         k=k%arr.length;
         int i=0;

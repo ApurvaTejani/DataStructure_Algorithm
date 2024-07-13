@@ -6,8 +6,10 @@ import java.util.Arrays;
 public class ReverseArray {
     public static void main(String[] args) {
         int arr[]={6,2,8,3,9};
+        System.out.println(Arrays.toString(reverseN(arr)));
         System.out.println(Arrays.toString(reverse(arr)));
     }
+    // Time Complexity -> O(N) and Space Complexity -> O(1)
     public static int []reverse(int arr[]){
         int i=0;
         int j=arr.length-1;
@@ -20,5 +22,15 @@ public class ReverseArray {
             j--;
         }
         return arr;
+    }
+    // Time Complexity -> O(N) and Space Complexity -> O(N)
+    public static int[] reverseN(int A[]){
+        int result[] = new int[A.length];
+        int j=0;
+        for(int i=A.length-1;i>=0;i--){
+            result[j]=A[i];
+            j++;
+        }
+        return result;
     }
 }

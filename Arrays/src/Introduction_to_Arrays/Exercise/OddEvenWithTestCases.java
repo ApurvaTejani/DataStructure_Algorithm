@@ -24,10 +24,11 @@ public class OddEvenWithTestCases {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
-
+        // Time complexity O(T*N), space complexity O(1)
+//T
         for (int i = 0; i < T; i++) {
             int N = sc.nextInt();
-
+// 3N
             int A[] = new int[N];
             for (int j = 0; j < N; j++) {
                 A[j] = sc.nextInt();

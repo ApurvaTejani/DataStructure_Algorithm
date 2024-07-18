@@ -2,7 +2,7 @@ package CarryForward;
 //Given an Array of size N. Find the length of the shortest range which contains both min and max of complete Array.
 public class ShortestRange {
     public static void main(String[] args) {
-        int arr[]={7,2,1,6,7,1,3,4,1};
+        int arr[]={8,8,8,8};
         System.out.println(findShortestRange(arr));
         System.out.println(optimizedFindShortestRange(arr));
     }
@@ -10,6 +10,8 @@ public class ShortestRange {
     public static int optimizedFindShortestRange(int A[]){
         int min=findMin(A);
         int max=findMax(A);
+        if(min==max)
+            return 1;
         int closestMin=0;
         int ans1=Integer.MAX_VALUE;
         int ans2=Integer.MAX_VALUE;
@@ -32,7 +34,7 @@ public class ShortestRange {
                 }
             }
         }
-        System.out.println(ans1+" "+ans2);
+
         return (ans1<ans2?ans1:ans2);
     }
     public static int findShortestRange(int A[]){
@@ -42,6 +44,8 @@ public class ShortestRange {
         int diff2=Integer.MAX_VALUE;
         int max=findMax(A);
         int min=findMin(A);
+        if(min==max)
+            return 1;
         for (int i = 0; i <A.length ; i++) {
             if(A[i]==min){
                 start=i;
@@ -67,7 +71,7 @@ public class ShortestRange {
                 }
             }
         }
-        System.out.println(diff1+" "+diff2);
+
 
         return (diff1<diff2?diff1:diff2);
     }

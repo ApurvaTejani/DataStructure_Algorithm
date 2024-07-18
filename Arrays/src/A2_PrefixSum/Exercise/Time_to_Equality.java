@@ -1,4 +1,4 @@
-package PrefixSum.Exercise;
+package A2_PrefixSum.Exercise;
 //Problem Description
 //        Given an integer array A of size N. In one second, you can increase the value of one element by 1.
 //

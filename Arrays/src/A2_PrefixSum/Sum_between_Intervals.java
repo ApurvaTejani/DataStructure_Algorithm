@@ -1,4 +1,4 @@
-package PrefixSum;
+package A2_PrefixSum;
 // Q - Given an array of size N and Q queries of the format s(start index) and e( end of index)
 // return the sum of elements from index s to e
 

@@ -1,4 +1,4 @@
-package PrefixSum.Exercise;
+package A2_PrefixSum.Exercise;
 
 import java.util.Arrays;
 

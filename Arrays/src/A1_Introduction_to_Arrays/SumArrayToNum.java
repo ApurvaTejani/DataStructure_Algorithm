@@ -1,4 +1,4 @@
-package Introduction_to_Arrays;
+package A1_Introduction_to_Arrays;
 
 //Given an Array of N elements. Find count of pairs[i,j] where i*j are indices such that arr[i]+arr[j]=k;
 public class SumArrayToNum {

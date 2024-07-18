@@ -1,4 +1,4 @@
-package CarryForward;
+package A3_CarryForward;
 
 // Given a String of lowercase english alphabet where i<j and arr[i]='a' & arr[i]='g'
 public class CountPairs {

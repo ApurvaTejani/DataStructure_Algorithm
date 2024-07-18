@@ -1,4 +1,4 @@
-package Introduction_to_Arrays;
+package A1_Introduction_to_Arrays;
 
 import java.util.Scanner;
 

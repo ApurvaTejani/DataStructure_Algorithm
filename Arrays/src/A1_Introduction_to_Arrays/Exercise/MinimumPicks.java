@@ -1,4 +1,4 @@
-package Introduction_to_Arrays.Exercise;
+package A1_Introduction_to_Arrays.Exercise;
 //Problem Description
 //        You are given an array of integers A of size N.
 //        Return the difference between the maximum among all even numbers of A and the minimum among all odd numbers in A.

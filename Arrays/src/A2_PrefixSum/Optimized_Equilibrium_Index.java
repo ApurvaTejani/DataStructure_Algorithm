@@ -1,4 +1,4 @@
-package PrefixSum;
+package A2_PrefixSum;
 
 public class Optimized_Equilibrium_Index {
     public static void main(String[] args) {

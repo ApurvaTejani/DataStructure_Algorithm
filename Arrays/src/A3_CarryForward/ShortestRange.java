@@ -1,4 +1,4 @@
-package CarryForward;
+package A3_CarryForward;
 //Given an Array of size N. Find the length of the shortest range which contains both min and max of complete Array.
 public class ShortestRange {
     public static void main(String[] args) {

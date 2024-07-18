@@ -1,4 +1,4 @@
-package Introduction_to_Arrays;
+package A1_Introduction_to_Arrays;
 //Given an Array of size N . Rotate your Array K times
 
 import java.util.Arrays;

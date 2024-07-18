@@ -1,4 +1,4 @@
-package Introduction_to_Arrays;
+package A1_Introduction_to_Arrays;
 //Given an array of size N . Find the count of elements which has atleast one greater element.
 
 

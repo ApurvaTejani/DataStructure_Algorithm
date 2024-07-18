@@ -1,4 +1,4 @@
-package PrefixSum;
+package A2_PrefixSum;
 
 import java.util.Scanner;
 

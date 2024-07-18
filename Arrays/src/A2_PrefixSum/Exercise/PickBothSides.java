@@ -1,4 +1,4 @@
-package PrefixSum.Exercise;
+package A2_PrefixSum.Exercise;
 //Problem Description
 //        You are given an integer array A of size N.
 //

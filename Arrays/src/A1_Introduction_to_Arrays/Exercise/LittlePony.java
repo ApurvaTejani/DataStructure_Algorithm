@@ -1,4 +1,4 @@
-package Introduction_to_Arrays.Exercise;
+package A1_Introduction_to_Arrays.Exercise;
 
 public class LittlePony {
     public static void main(String[] args) {

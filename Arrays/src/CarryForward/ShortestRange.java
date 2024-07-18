@@ -2,8 +2,38 @@ package CarryForward;
 
 public class ShortestRange {
     public static void main(String[] args) {
-        int arr[]={1,6,4,2,7,7,5,1,3,1,1,5};
+        int arr[]={7,2,1,6,7,1,3,4,1};
         System.out.println(findShortestRange(arr));
+        System.out.println(optimizedFindShortestRange(arr));
+    }
+
+    public static int optimizedFindShortestRange(int A[]){
+        int min=findMin(A);
+        int max=findMax(A);
+        int closestMin=0;
+        int ans1=Integer.MAX_VALUE;
+        int ans2=Integer.MAX_VALUE;
+        for (int i = A.length-1; i >=0 ; i--) {
+            if(A[i]==min)
+                closestMin=i;
+            else if(A[i]==max) {
+                if(ans1>(closestMin-i + 1)&& closestMin!=0) {
+                    ans1 = closestMin-i + 1;
+                }
+            }
+        }
+        closestMin=0;
+        for (int i = A.length-1; i >=0 ; i--) {
+            if(A[i]==max)
+                closestMin=i;
+            else if(A[i]==min) {
+                if(ans2>(closestMin-i + 1) && closestMin!=0) {
+                    ans2 = closestMin-i + 1;
+                }
+            }
+        }
+        System.out.println(ans1+" "+ans2);
+        return (ans1<ans2?ans1:ans2);
     }
     public static int findShortestRange(int A[]){
         int start=0;

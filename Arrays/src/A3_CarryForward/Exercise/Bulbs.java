@@ -21,7 +21,7 @@ package A3_CarryForward.Exercise;
 //        A = [0, 1, 0, 1] //Output 1 - 4
 public class Bulbs {
     public static void main(String[] args) {
-        int A[]={0,0,0,0,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0};
+        int A[]={0,0,0,0,1,1,1,0,0,0,0,1};
         System.out.println(findCount(A));
     }
     public static int findCount(int A[]){
